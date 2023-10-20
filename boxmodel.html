@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL CSS</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            font-size: xx-large;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            /* onlybthe height of conntent */
+            box-sizing: border-box;
+            /* the size of entire border + padding */
+        }
+
+        .box2{
+            color: rgb(171, 21, 231);
+            font-size: xx-large;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            /* onlybthe height of conntent */
+            box-sizing: border-box;
+            /* the size of entire border + padding */
+           
+        }
+        .box3{
+            color: rgb(16, 181, 41);
+            font-size: xx-large;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 50px;
+            border: 2px solid blue;
+            height: 200px;
+            /* onlybthe height of conntent */
+            box-sizing: border-box;
+            /* the size of entire border + padding */
+           
+        }
+
+        /* margin collapse; if two margins collapse than the marging of greater one will take place only onece  */
+   
+
+   
+    </style>
+</head>
+<body>
+    <div class="box box1">i am box</div>
+    <div class="box box2">i am another box</div>
+    <div class="box box3">i am another another box </div>
+</body>
+</html>
